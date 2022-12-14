@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "name": "Computer",
+      "price": "323",
+      "id": 3
+    },
+    {
+      "name": "Pineapple juice",
+      "price": "134",
+      "id": 5
+    },
+    {
+      "name": "new product",
+      "price": "1234344",
+      "id": ":rl:"
+    },
+    {
+      "name": "cpu",
+      "price": "2335",
+      "id": "fzG8OG9KbJRPPIj3_7fuc"
+    },
+    {
+      "name": "new lap",
+      "price": "1234",
+      "id": 6
+    },
+    {
+      "name": "monitor",
+      "price": "1235",
+      "id": 7
+    }
+  ]
+}

@@ -1,34 +1,54 @@
 {
-  "products": [
+  "users": [
     {
-      "name": "Computer",
-      "price": "323",
-      "id": 3
+      "user": "Doctor1",
+      "pwd": "123",
+      "id": 2,
+      "roles": [
+        2001,
+        1984
+      ]
     },
     {
-      "name": "Pineapple juice",
-      "price": "134",
-      "id": 5
+      "user": "Doctor2",
+      "pwd": "123",
+      "id": 4,
+      "roles": [
+        2001,
+        1984
+      ]
     },
     {
-      "name": "new product",
-      "price": "1234344",
-      "id": ":rl:"
+      "user": "admin",
+      "pwd": "admin",
+      "id": 3,
+      "roles": [
+        5150,
+        2001,
+        1984
+      ]
     },
     {
-      "name": "cpu",
-      "price": "2335",
-      "id": "fzG8OG9KbJRPPIj3_7fuc"
+      "user": "John",
+      "pwd": "123",
+      "id": "-LTPqA9-JoXxVyCGpb7Ki",
+      "roles": [
+        2001
+      ]
+    }
+  ],
+  "appointments": [
+    {
+      "doctor": "Doctor1",
+      "date": "2022-12-28T07:52:17.884Z",
+      "id": "vSkr_CXHF1XPdsW8Bl8ot",
+      "user": "John"
     },
     {
-      "name": "new lap",
-      "price": "1234",
-      "id": 6
-    },
-    {
-      "name": "monitor",
-      "price": "1235",
-      "id": 7
+      "doctor": "Doctor2",
+      "date": "2022-12-31T07:52:28.941Z",
+      "id": "21ToGlXsh6I88CmkexqGr",
+      "user": "John"
     }
   ]
 }

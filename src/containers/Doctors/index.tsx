@@ -1,9 +1,9 @@
 import Appointments from "@components/Appointments";
 import Pagelayout from "@components/Pagelayout";
 
-interface HomePageProps {}
+interface DoctorsPageProps {}
 
-const HomePage: React.FC<HomePageProps> = () => {
+const DoctorsPage: React.FC<DoctorsPageProps> = () => {
   return (
     <Pagelayout>
       <Appointments />
@@ -11,4 +11,4 @@ const HomePage: React.FC<HomePageProps> = () => {
   );
 };
 
-export default HomePage;
+export default DoctorsPage;

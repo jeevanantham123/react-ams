@@ -1,9 +1,10 @@
-import product from "./products/slice";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import rootSaga from "./saga";
 import createSagaMiddleware from "redux-saga";
+import appointment from "./appointments/slice";
+import user from "./users/slice";
 
-const rootReducer = combineReducers({ product });
+const rootReducer = combineReducers({ appointment, user });
 
 const sagaMiddleware = createSagaMiddleware();
 const middleware = (getDefaultMiddleware: any) => [

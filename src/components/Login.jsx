@@ -35,11 +35,15 @@ const Login = () => {
       const response = await axios.get(`/users?user=${user}&pwd=${pwd}`, {
         headers: { "Content-Type": "application/json" },
       });
-      const roles = response?.data[0]?.roles;
-      setAuth({ user, pwd, roles });
-      setUser("");
-      setPwd("");
-      navigate(from, { replace: true });
+      if (response?.data?.length) {
+        const roles = response?.data[0]?.roles;
+        setAuth({ user, pwd, roles });
+        setUser("");
+        setPwd("");
+        navigate(from, { replace: true });
+      } else {
+        throw new Error("Unauthorized");
+      }
     } catch (err) {
       if (!err?.response) {
         setErrMsg("No Server Response");

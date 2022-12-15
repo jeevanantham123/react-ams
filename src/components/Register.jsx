@@ -58,8 +58,7 @@ const Register = () => {
       return;
     }
     try {
-      const response = await axios.post("/users", { user, pwd });
-
+      const response = await axios.post("/users", { user, pwd, roles: [2001] });
       setSuccess(true);
       //clear state and controlled inputs
       setUser("");
@@ -82,8 +81,8 @@ const Register = () => {
       {success ? (
         <section className="bg-blue-400">
           <h1>Success!</h1>
-          <p>
-            <a href="#">Sign In</a>
+          <p className="font-bold underline mt-20">
+            <a href="/login">Sign In</a>
           </p>
         </section>
       ) : (
